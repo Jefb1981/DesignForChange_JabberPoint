@@ -1,4 +1,6 @@
-Eindopdracht, Scenario 1
+----------------------------
+- Eindopdracht, Scenario 1 -
+----------------------------
 De oorspronkelijke versie van JabberPoint heeft kan een presentatie wegschrijven naar een XML-bestand, en inlezen vanuit een XML-bestand.
 We willen de mogelijkheden van JabberPoint op dit gebied uitbreiden: presentaties moeten in verschillende formaten bewaard kunnen worden.
 Het is de bedoeling dat JabberPoint op basis van de extensie die de gebruiker voor een bestandsnaam geeft, beslist in welk formaat de
