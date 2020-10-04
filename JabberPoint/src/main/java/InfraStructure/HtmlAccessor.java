@@ -1,18 +1,17 @@
- 
 package InfraStructure;
 
-import slideshow.SlideShow;
+import DomainService.Slide;
 
-public class HtmlAccessor extends BaseAccessor{
+public class HtmlAccessor extends BaseAccessor {
 
     @Override
-    public void loadFile(SlideShow presentation, String filename){
-        throw new UnsupportedOperationException("Not supported yet.");  
+    public void loadFile(Slide presentation, String filename) {
+        throw new UnsupportedOperationException("Not supported yet.");
     }
 
     @Override
-    public void saveFile(SlideShow p, String filename) {
-        throw new UnsupportedOperationException("Not supported yet.");  
+    public void saveFile(Slide presentation, String filename) {
+        throw new UnsupportedOperationException("Not supported yet.");
     }
-    
+
 }

@@ -1,16 +1,16 @@
 package InfraStructure;
 
-import slideshow.SlideShow;
+import DomainService.Slide;
 
 public class GenericDemoPresentation extends BaseAccessor {
 
     @Override
-    public void loadFile(SlideShow p, String fn){
+    public void loadFile(Slide presentation, String filename) {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
     @Override
-    public void saveFile(SlideShow p, String fn){
+    public void saveFile(Slide presentation, String filename) {
         throw new IllegalStateException("Save As->Demo! aangeroepen");
     }
 

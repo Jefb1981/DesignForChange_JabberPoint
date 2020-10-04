@@ -1,25 +1,20 @@
- 
 package InfraStructure;
 
-import slideshow.SlideShow;
+import DomainService.Slide;
 
-/**
- *
- * @author Jhaner Fernandez <jhanerfernandez@gmail.com>
- */
-public class TextAccessor extends BaseAccessor{
+public class TextAccessor extends BaseAccessor {
 
     @Override
-    public void loadFile(SlideShow presentation, String filename){
+    public void loadFile(Slide presentation, String filename) {
         // Todo: Load from a location and start a new Slideshow 
-        throw new UnsupportedOperationException("Not supported yet.");  
+        throw new UnsupportedOperationException("Not supported yet.");
     }
 
     @Override
-    public void saveFile(SlideShow presentation, String filename){
+    public void saveFile(Slide presentation, String filename) {
         // Todo: Save to a location and give some event to the gui with some information                 
-       
-        throw new UnsupportedOperationException("Not supported yet.");  
+
+        throw new UnsupportedOperationException("Not supported yet.");
     }
-    
+
 }

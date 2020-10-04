@@ -1,6 +1,6 @@
 package InfraStructure;
 
-import slideshow.SlideShow;
+import DomainService.Slide;
 
 public abstract class BaseAccessor implements Accessor{
 
@@ -14,7 +14,7 @@ public abstract class BaseAccessor implements Accessor{
     public BaseAccessor() {
     }
  
-    abstract public void loadFile(SlideShow presentation, String filename);
+    abstract public void loadFile(Slide presentation, String filename);
 
-    abstract public void saveFile(SlideShow presentation, String filename);
+    abstract public void saveFile(Slide presentation, String filename);
 }

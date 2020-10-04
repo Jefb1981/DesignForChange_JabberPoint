@@ -1,10 +1,10 @@
 package InfraStructure;
 
-import SlideShow;
+import DomainService.Slide;
 
 public interface Accessor {
 
-    void loadFile(SlideShow presentation, String filename);
+    void loadFile(Slide presentation, String filename);
 
-    void saveFile(SlideShow presentation, String filename);
+    void saveFile(Slide presentation, String filename);
 }

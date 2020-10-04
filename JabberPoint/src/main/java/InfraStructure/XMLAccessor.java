@@ -1,6 +1,6 @@
 package InfraStructure;
 
-import slideshow.SlideShow;
+import DomainService.Slide;
 
 import java.util.Vector;
 import java.io.File;
@@ -39,42 +39,41 @@ public class XMLAccessor extends BaseAccessor {
     }
 
     @Override
-    public void loadFile(SlideShow presentation, String filename) {
+    public void loadFile(Slide presentation, String filename) {
         // Todo: Load file from a location and give some event to the UI with some information 
         // Think here about a dispatcher to inform the UI
         int slideNumber, itemNumber, max = 0, maxItems = 0;
-        try {
-            DocumentBuilder builder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
-            Document document = builder.parse(new File(filename)); // maak een JDOM document
-            Element doc = document.getDocumentElement();
+        //try {
+             //DocumentBuilder builder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
+            //Document document = builder.parse(new File(filename)); // maak een JDOM document
+            //Element doc = document.getDocumentElement();
             //presentation.setTitle(getTitle(doc, SHOWTITLE));
 
-            NodeList slides = doc.getElementsByTagName(SLIDE);
-            max = slides.getLength();
+            //NodeList slides = doc.getElementsByTagName(SLIDE);
+            //max = slides.getLength();
             for (slideNumber = 0; slideNumber < max; slideNumber++) {
-                Element xmlSlide = (Element) slides.item(slideNumber);
-                Slide slide = new Slide();
-                slide.setTitle(getTitle(xmlSlide, SLIDETITLE));
-                presentation.append(slide);
-
-                NodeList slideItems = xmlSlide.getElementsByTagName(ITEM);
-                maxItems = slideItems.getLength();
+               // Element xmlSlide = (Element) slides.item(slideNumber);
+//                Slide slide = new Slide();
+//                slide.setTitle(getTitle(xmlSlide, SLIDETITLE));
+//                presentation.append(slide);
+//                NodeList slideItems = xmlSlide.getElementsByTagName(ITEM);
+//                maxItems = slideItems.getLength();
                 for (itemNumber = 0; itemNumber < maxItems; itemNumber++) {
-                    Element item = (Element) slideItems.item(itemNumber);
-                    loadSlideItem(slide, item);
+                  //  Element item = (Element) slideItems.item(itemNumber);
+                 //   loadSlideItem(slide, item);
                 }
             }
-        } catch (IOException iox) {
-            System.err.println(iox.toString());
-        } catch (SAXException ex) {
-            Logger.getLogger(XMLAccessor.class.getName()).log(Level.SEVERE, null, ex);
-        }
+        //} catch (IOException iox) {
+        //    System.err.println(iox.toString());
+        //} catch (SAXException ex) {
+        //    Logger.getLogger(XMLAccessor.class.getName()).log(Level.SEVERE, null, ex);
+        //}
     }
 
     @Override
-    public void saveFile(SlideShow p, String fn) {
+    public void saveFile(Slide p, String fn) {
         // Todo: Save to a location and give some event to the gui with some information 
-        throw new UnsupportedOperationException("Not supported yet."); 
+        throw new UnsupportedOperationException("Not supported yet.");
     }
 
 }
