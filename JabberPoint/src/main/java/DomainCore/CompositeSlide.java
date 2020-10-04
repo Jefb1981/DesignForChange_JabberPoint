@@ -1,10 +1,7 @@
-
 package DomainCore;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import DomainService.Slide;
 
 public class CompositeSlide extends BaseSlide {
 

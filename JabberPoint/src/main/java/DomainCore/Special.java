@@ -1,7 +1,6 @@
 
 package DomainCore;
 
-import DomainService.Slide;
 
 public class Special extends BaseSlide {
 

@@ -1,20 +1,17 @@
 package InfraStructure;
 
-import DomainService.Slide;
+import DomainService.Presentation;
 
 public class TextAccessor extends BaseAccessor {
 
     @Override
-    public void loadFile(Slide presentation, String filename) {
-        // Todo: Load from a location and start a new Slideshow 
-        throw new UnsupportedOperationException("Not supported yet.");
+    public void loadFile(Presentation presentation, String filename) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public void saveFile(Slide presentation, String filename) {
-        // Todo: Save to a location and give some event to the gui with some information                 
-
-        throw new UnsupportedOperationException("Not supported yet.");
+    public void saveFile(Presentation presentation, String filename) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
 }

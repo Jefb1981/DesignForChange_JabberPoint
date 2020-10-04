@@ -1,23 +1,8 @@
 package InfraStructure;
 
-import DomainService.Slide;
+import DomainService.Presentation;
 
-import java.util.Vector;
-import java.io.File;
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.io.FileWriter;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.ParserConfigurationException;
-
-import org.xml.sax.SAXException;
-import org.w3c.dom.Document;
 import org.w3c.dom.Element;
-import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.NodeList;
 
 public class XMLAccessor extends BaseAccessor {
@@ -39,7 +24,7 @@ public class XMLAccessor extends BaseAccessor {
     }
 
     @Override
-    public void loadFile(Slide presentation, String filename) {
+    public void loadFile(Presentation presentation, String filename) {
         // Todo: Load file from a location and give some event to the UI with some information 
         // Think here about a dispatcher to inform the UI
         int slideNumber, itemNumber, max = 0, maxItems = 0;
@@ -71,9 +56,10 @@ public class XMLAccessor extends BaseAccessor {
     }
 
     @Override
-    public void saveFile(Slide p, String fn) {
+    public void saveFile(Presentation presentation, String fn) {
         // Todo: Save to a location and give some event to the gui with some information 
         throw new UnsupportedOperationException("Not supported yet.");
     }
+
 
 }

@@ -1,8 +1,7 @@
 package DomainCore;
 
-import DomainService.Slide;
 
-abstract class BaseSlide implements Slide {
+abstract class BaseSlide extends Slide {
 
     protected MetaInformation baseInformation;
 
@@ -10,12 +9,9 @@ abstract class BaseSlide implements Slide {
         this.baseInformation = info;
     }
 
-    @Override
     public abstract void add(Slide slide);
 
-    @Override
     public abstract void remove(Slide slide);
 
-    @Override
     public abstract int getSize();
 }
