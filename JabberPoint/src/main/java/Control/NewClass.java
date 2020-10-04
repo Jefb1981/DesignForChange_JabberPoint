@@ -9,6 +9,6 @@ package Control;
  *
  * @author Jhaner Fernandez <jhanerfernandez@gmail.com>
  */
-public class NewClass {
+public class NewClass { 
     
 }
