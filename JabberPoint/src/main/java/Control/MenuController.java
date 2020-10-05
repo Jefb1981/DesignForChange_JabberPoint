@@ -1,7 +1,7 @@
 package Control;
-
+ 
 import DomainService.AboutBox;
-import DomainService.Presentation;
+import DomainCore.Presentation;
 import InfraStructure.Accessor;
 import InfraStructure.XMLAccessor;
 import java.awt.MenuBar;

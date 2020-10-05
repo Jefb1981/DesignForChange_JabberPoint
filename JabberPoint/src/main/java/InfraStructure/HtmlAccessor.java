@@ -1,9 +1,8 @@
 package InfraStructure;
 
-import DomainService.Presentation;
+import DomainCore.Presentation;
 
-public class HtmlAccessor extends BaseAccessor {
-
+public class HtmlAccessor extends Accessor {
 
     @Override
     public void loadFile(Presentation presentation, String filename) {

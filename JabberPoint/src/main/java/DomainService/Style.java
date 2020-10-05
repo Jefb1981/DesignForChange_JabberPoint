@@ -25,10 +25,10 @@ public class Style {
 
     private static final String FONTNAME = "Helvetica";
     int indent;
-    Color color;
-    Font font;
-    int fontSize;
-    int leading;
+    public Color color;
+    public Font font;
+    public int fontSize;
+    public int leading;
 
     public static void createStyles() {
         styles = new Style[5];
@@ -60,5 +60,9 @@ public class Style {
 
     public Font getFont(float scale) {
         return font.deriveFont(fontSize * scale);
+    }
+    
+    public int getIndent(){
+        return indent;
     }
 }

@@ -1,17 +1,18 @@
 package InfraStructure;
+ 
+import DomainCore.Presentation;
 
-import DomainService.Presentation;
 
-public class TextAccessor extends BaseAccessor {
+public class TextAccessor extends Accessor {
 
     @Override
     public void loadFile(Presentation presentation, String filename) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        throw new UnsupportedOperationException("Not supported yet.");
     }
 
     @Override
     public void saveFile(Presentation presentation, String filename) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        throw new UnsupportedOperationException("Not supported yet.");
     }
 
 }
