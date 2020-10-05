@@ -5,8 +5,6 @@ import DomainService.SlideViewerFrame;
 import DomainService.Style;
 import InfraStructure.Accessor;
 import java.io.IOException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 public class Jabberpoint {
 
