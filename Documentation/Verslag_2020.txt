@@ -1,0 +1,226 @@
+\documentclass{article}
+\usepackage{appendix}
+\usepackage{array}
+
+\renewcommand{\appendixpagename}{Appendix}
+
+\title{Report Jabberpoint assignment}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{table}[h!tbp]
+\caption{Assignment}
+\begin{tabular}{l|l}
+	\hline
+Scenario & scenario 1\\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h!tbp]
+\caption{Team}
+\begin{tabular}{l|l}
+	\hline
+Jhaner Fernandez & 852048352\\
+\hline
+Phillip Braas & student number\\
+\hline
+\end{tabular}
+\end{table}
+
+
+\begin{table}[h!tbp]
+\caption{Work division}
+\begin{tabular}{l|l}
+	\hline
+name & Performed the following tasks\\
+\hline
+name & Performed the following tasks\\
+\hline
+\end{tabular}
+\end{table}
+
+\hrulefill
+
+
+ 
+\section{Requested feature}
+\subsection{Ubiquitous language}
+When creating a Ubiquitous language the creator wants to guarantees that the developers and domain expert use the same definition of concepts, and therefore prevents mistakes based on misunderstanding the domain.
+
+-- remove --
+Max. 1 page; preferably less
+
+Describe those parts of the ubiquitous language that cover the concepts related to the feature request. 
+
+Explain whether you had to make changes to your original ubiquitous language (which should be in the appendix). Describe those changes. Changes may be additions or modifications.
+-- remove end --
+\subsubsection{Entities identified}
+ The first tasks for this project is to establish a common vocabulary for the problem domain by describing the entities (nouns) found in the assignment document about a "presenting slides".
+ 
+
+\subsection{Design of the domain}
+Max. 1 page; preferably less.
+Describe those parts of the design of the domain  that cover the concepts related to the feature request.  
+
+Leave out how you create objects.
+
+Explain whether you had to make changes to your original design (in the appendix). Describe those changes. Changes may be additions or modifications.
+
+You may give the diagrams in separate files (.png or .jpg preferred). Refer from within the text to filename or number. You may also add them to this report. The limit of 1 page does not include the diagrams.
+
+\subsection{Design UI, communication and control}
+Max. 1 page; preferably less.
+
+Describe those parts of the design of the user interface, the communication and the control that cover the concepts related to the feature request.  Also explain whether you had to make changes to your original design (in the appendix). In that case, describe those changes. Changes may be additions or modifications.
+
+Leave out how you create objects.
+ 
+You may give the diagrams in separate files (.png or .jpg preferred). Refer from within the text to filename or number. You may also add them to this report. The limit of 1 page does not include the diagrams.
+
+
+\subsection{Object creation}
+Max. 1 page; preferably less.
+
+Describe those parts of the design of the object creation that cover the concepts related to the feature request.  Also explain whether you had to make changes to your original design (in the appendix). In that case, describe those changes. Changes may be additions or modifications.
+ 
+You may give the diagrams in separate files (.png or .jpg preferred). Refer from within the text to filename or number. You may also add them to this report. The limit of 1 page does not include the diagrams.
+
+\section{Patterns}
+For every pattern that you used in the \emph{whole design}, give:
+
+\begin{itemize}
+	\item the name of the pattern
+	\item the diagram of the applied pattern. Show the diagrams in the report (for each occurrence).
+	\item a table with class names and the role they play in the pattern (for each occurrence).
+	\item the reason why you used this pattern in this place (for each occurrence).
+\end{itemize}
+
+There may be several places where you applied a pattern. Mention them all. This means that you may need several diagrams and several tables for each pattern name that you mention.
+
+An example of the kind of tables we expect is shown in Table~\ref{pattern-example}.
+
+\begin{table}[!htbp]
+	\caption{Mapping of the design of the board to the Comnposite pattern}
+	\label{pattern-example}
+	\small
+	\begin{tabular}{ l l l l l}
+		\cline {1-1} \cline{3-3} \cline{5-5}
+		\emph{class} & & \emph{Role in the pattern} & & \emph{Comments}\\
+		GameElement     && Component && abstract class \\
+		GameComposite    &&  Composite && abstract class\\
+		Board    &&  Composite && concrete class\\
+		Row && Composite && concrete class\\
+		Hole &&  Leaf && abstract class\\
+		PlayHole && Leaf && concrete class \\
+		Store && Leaf && concrete class\\
+		\cline {1-1} \cline{3-3} \cline{5-5}
+	\end{tabular}
+\end{table}
+
+\section{Reflection (individually)}
+Max 2 pages, preferrably less.
+
+Write the reflection \emph{individually}.
+
+\subsection{Design in the appendix}
+Describe, with good argumentation, why and how the design in the appendix has made it easy to implement the extra feature.
+
+\subsection{Future changes}
+Describe, with good argumentation, how the resulting design is flexible with respect to future changes.
+
+\subsection{Reflection on the process}
+Describe how you evaluate:
+
+\begin{itemize}
+	\item the process of domain-driven design,
+	\item sharing and learning from others in github,
+	\item the cooperation with your team mate.
+\end{itemize}
+
+\subsection{And...}
+You may, of course, add anything you want to add to the reflection.
+
+\clearpage
+\appendix
+\appendixpage
+
+\section{Ubiquitous language}
+Include the ubiquitous language as it was before you received your assignment.
+
+\vspace{5mm} %5mm vertical space
+\begin{tabular}{ |p{2cm}||p{2cm}||p{6cm}| }
+ \hline
+ \multicolumn{3}{|l|}{1. The concept of a presenter} \\
+ \hline
+ Concept & Sub-Concept & Meaning \\
+ \hline
+ Presenter & -  & A person or group presenting some kind of work through the projector.\\
+ \hline
+\end{tabular}
+
+\vspace{5mm} %5mm vertical space
+ 
+\begin{tabular}{ |p{2cm}||p{2cm}||p{6cm}| }
+ \hline
+ \multicolumn{3}{|l|}{2. The concept of a projector} \\
+ \hline
+ Concept & Sub-Concept & Meaning \\
+ \hline
+ Projector & -  & A device that is use to display the slide-show, doing one slide at a time\\
+ \hline
+\end{tabular}
+
+\vspace{5mm} %5mm vertical space
+
+\begin{tabular}{ |p{2cm}||p{2cm}||p{6cm}| }
+ \hline
+ \multicolumn{3}{|l|}{3.The concept of a slide show} \\
+ \hline
+ Concept & Sub-Concept & Meaning \\
+ \hline
+ Slide Show & -  & It is a sequence of slides that someone wants to presents during their presentation, that are performed in a specific order.\\
+ \hline
+\end{tabular}
+
+\vspace{5mm} %5mm vertical space
+
+\begin{tabular}{ |p{2cm}||p{2cm}||p{6cm}| }
+ \hline
+ \multicolumn{3}{|l|}{The concept of a remark} \\
+ \hline
+ Concept & Sub-Concept & Meaning \\
+ \hline
+ Remark & -  & This are notes on a slide for the speakers to use during the presentation. These are important notes that the presenter want to tell to the audience. This remarks may contain figures,  definitions, tables with numbers, and so forth.\\
+ \hline
+\end{tabular}
+
+\vspace{5mm} %5mm vertical space
+\begin{tabular}{ |p{2cm}||p{2cm}||p{6cm}| }
+ \hline
+ \multicolumn{3}{|l|}{The concept of a slide} \\
+ \hline
+ Concept & Sub-Concept & Meaning \\
+ \hline
+ Slide & -  & A slide is an element of an collection of the presentation that is called by the slide-show. A slide can be empty. A non-empty slide does have at least a title and a sequence number.\\
+ - & Title &  The name of the slide.\\
+ - & Meta Information & Contains extra or generic information about the slide(s).\\
+ \hline
+\end{tabular}
+
+
+
+
+\section{Design of the domain}
+Include the design of the domain as it was before you received your assignment.
+
+\section{Design of the creation of objects (and reading and writing)}
+Include the design of the creation of objects and reading and writing as it was before you received your assignment.
+
+\section{Design of User interface, communication and control}
+Include the design of the user interface, communication and control as it was before you received your assignment.
+
+\end{document}
+
